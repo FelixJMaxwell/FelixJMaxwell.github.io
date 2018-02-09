@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h2{
+  color: #417493;
+}
+
+header{
+  background-color: #0088ce;
+
+  .mainMenu{
+    margin: 0;
+    padding: 0;
+    color: #f4fcff;
+  }
+
+  .mainMenu li{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
+body{
+  background-color: #0aa1da;
+  .nameProfession{
+    margin-top: 60px;
+    margin-bottom: 35px;
+    color: #f4fcff;
+
+    .titles{
+      margin-top: 200px;
+    }
+
+    .photo{
+      img{
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .nopadding{
+    padding: 0;
+  }
+
+  .np{
+    padding: 0;
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.7);
+    margin-bottom: 8px;
+  }
+
+  .np2{
+    padding: 0;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.7);
+    margin-bottom: 0;
+    background-color: #576268;
+    .description{
+      margin-top: 15px;
+      color: #f4fcff;
+    }
+  }
+
+  .leftBoxContainer{
+    box-shadow: 8px 0px 0px 0px rgba(0,0,0,0.7);
+  }
+
+  .wrapper{
+    margin-top: 8px;
+    background-color: #f7f7f7;
+  }
+
+  .information{
+    margin-top: 35px;
+  }
+
+  .rightInformation{
+    margin-left: 35px;
+  }
+
+  .newLine{
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .mrTop{
+    margin-top: -22.5px;
+  }
+
+  footer{
+    color: #f4fcff;
+    text-align: center;
+
+    .final{
+      background-color: #0088ce;
+      p{
+        margin: 0;
+        padding: 5px;
+      }
+    }
+
+    .pagina{
+      display: block;
+      margin: 25px auto;
+      width: 100px;
+    }
+  }
+}
