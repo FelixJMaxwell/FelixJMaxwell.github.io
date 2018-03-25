@@ -6,43 +6,44 @@
     <title>Oliver García Montero</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
-    <script src="../js/functions.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/functions.js"></script>
 </head>
 
 <body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="50"  id="theresnoplacelikehome">
-  <div class="row">
-    <header class="container-fluid">
-        <div class="row">
-          <div class="container">
-            <div class="row">
-              <nav>
-                <ul class="mainMenu">
-                  <a href="#theresnoplacelikehome"><li>Hello</li></a>
-                  <a href="#descripcion"><li>Resumen</li></a>
-                  <li>Portfolio</li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
+
+  <div class="row headerContainer">
+    <header class="offset-md-1 col-md-8">
+      <nav>
+        <ul class="mainMenu">
+          <a href="#theresnoplacelikehome">
+            <li>Hello</li>
+          </a>
+          <a href="#descripcion">
+            <li>Resumen</li>
+          </a>
+          <a href="./perfil2.html">
+            <li>Portfolio</li>
+          </a>
+        </ul>
+      </nav>
     </header>
   </div>
 
-  <div class="row separation np">
-    <div class="nameProfession container">
-      <div class="row">
-        <div class="titles col-md-8">
-          <h1>Oliver García Montero</h1>
-          <h4>Ing. en Sistemas Computacionales</h4>
-        </div>
-        <div class="photo col-md-4">
-          <img class="float-right" src="https://pbs.twimg.com/profile_images/932096343585144832/I5zZCEyj_400x400.jpg" alt="photo">
-        </div>
-      </div>
+  <div class="row nameProfession">
+    <div class="titles col-md-6">
+      <h1>Oliver García Montero</h1>
+      <h4>Ing. en Sistemas Computacionales</h4>
+    </div>
+    <div class="photo col-md-6">
+      <img src="https://pbs.twimg.com/profile_images/932096343585144832/I5zZCEyj_400x400.jpg" alt="photo">
     </div>
   </div>
-  <div class="row separation np2">
-    <div class="container">
+
+  <div class="row np"></div>
+
+  <div class="row np2">
+    <div class="offset-md-1 col-md-10">
       <p class="description" id="descripcion">
         Soy un Ingeniero en Sistemas Computacionales,
         titulado en el Instituto Tecnológico de Acapulco,
@@ -55,99 +56,89 @@
       </p>
     </div>
   </div>
-  <div class="row">
-    <div class="container-fluid wrapper">
+
+  <div class="row wrapper">
+    <div class="container">
       <div class="row">
-        <div class="container">
-          <div class="row">
-            <div class="leftBoxContainer col-md-4">
-              <div class="information">
-                <h2>Información personal</h2>
-                <p class="info">Nombre <span>Oliver Garcia Montero</span></p>
-                <p class="info">Cumpleaños <span>11 Abril 1992</span></p>
-                <p class="info">Estado Civil <span>Soltero</span></p>
-                <p class="info">Nacionalidad <span>Mexicano</span></p>
-                <p class="info">Idiomas <span>Español, Ingles</span></p>
-                <p class="info">Correo <span>inggamontero@gmail.com</span></p>
-                <h2>Software</h2>
-                <p><span>Adobe Photoshop</span> -
-                  <span>Microsoft Office</span> -
-                  <span>Google Chrome</span> -
-                  <span> Unity 3D</span> -
-                  <span>Blender</span> -
-                </p>
-                <h2>Programación</h2>
-                <p>
-                  <span>C++</span> -
-                  <span>Java</span> -
-                  <span>Python</span> -
-                  <span>HTML</span> -
-                  <span>CSS/SCSS</span> -
-                  <span>Javascript</span> -
-                  <span>jQuery</span> -
-                  <span>C#</span>
-                </p>
-              </div>
-            </div>
-            <div class="rightBoxContainer col-md-8">
-              <div class="information rightInformation">
-                <h2>Trabajo</h2>
-                <p>Webmaster en el Instituto Tecnológico de Acapulco <span>2016</span></p>
-                <p class="mrTop"><span class="newLine">Encargado de la pagina web y una parte de la información que se publicaba en ella.</span></p>
-                <h2>Habilidades</h2>
-                <p>Desarrollo web Front-End</p>
-                <p class="mrTop"><span class="newLine">HTML, CSS con preprocesador SASS(SCSS) y Bootstrap, JavaScript con el framework jQuery, Por añadir: MeteorJS, Angular, React</span></p>
-                <p>Desarrollo de videojuegos utilizando el motor Unity 3D</p>
-                <p class="mrTop"><span class="newLine">Programación en C# y utilizando Blender como programa 3D</span></p>
-                <p>Manejo avanzado de Windows</p>
-                <p>Capacidades tecnicas sobre equipos de computo</p>
-                <h2>Educación</h2>
-                <p>Instituto Tecnológico de Acapulco <span>2010 - 2016</span></p>
-                <p class="mrTop"><span class="newLine">Ingenieria en Sistemas Computacionales [84.4]</span></p>
-              </div>
-            </div>
+        <div class="leftBoxContainer col-md-4">
+          <div class="information">
+            <h2>Información personal</h2>
+            <p class="info">Nombre <span>Oliver Garcia Montero</span></p>
+            <p class="info">Cumpleaños <span>11 Abril 1992</span></p>
+            <p class="info">Estado Civil <span>Soltero</span></p>
+            <p class="info">Nacionalidad <span>Mexicano</span></p>
+            <p class="info">Idiomas <span>Español, Ingles</span></p>
+            <p class="info">Correo <span>inggamontero@gmail.com</span></p>
+            <h2>Software</h2>
+            <p><span>Adobe Photoshop</span> -
+              <span>Microsoft Office</span> -
+              <span>Google Chrome</span> -
+              <span> Unity 3D</span> -
+              <span>Blender</span> -
+            </p>
+            <h2>Programación</h2>
+            <p>
+              <span>C++</span> -
+              <span>Java</span> -
+              <span>Python</span> -
+              <span>HTML</span> -
+              <span>CSS/SCSS</span> -
+              <span>Javascript</span> -
+              <span>jQuery</span> -
+              <span>C#</span>
+            </p>
+          </div>
+        </div>
+        <div class="rightBoxContainer col-md-6">
+          <div class="information rightInformation">
+            <h2>Trabajo</h2>
+            <p>Webmaster en el Instituto Tecnológico de Acapulco <span>2016</span></p>
+            <p class="mrTop"><span class="newLine">Encargado de la pagina web y una parte de la información que se publicaba en ella.</span></p>
+            <h2>Habilidades</h2>
+            <p>Desarrollo web Front-End</p>
+            <p class="mrTop"><span class="newLine">HTML, CSS con preprocesador SASS(SCSS) y Bootstrap, JavaScript con el framework jQuery, Por añadir: MeteorJS, Angular, React</span></p>
+            <p>Desarrollo de videojuegos utilizando el motor Unity 3D</p>
+            <p class="mrTop"><span class="newLine">Programación en C# y utilizando Blender como programa 3D</span></p>
+            <p>Manejo avanzado de Windows</p>
+            <p>Capacidades tecnicas sobre equipos de computo</p>
+            <h2>Educación</h2>
+            <p>Instituto Tecnológico de Acapulco <span>2010 - 2016</span></p>
+            <p class="mrTop"><span class="newLine">Ingenieria en Sistemas Computacionales [84.4]</span></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <footer>
-    <div>
-      <div class="container-fluid nopadding">
-        <div class="row">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <a href="https://thefallingboy.wordpress.com">
-                  <img src="./images/globe.svg" alt="www" class="pagina">
-                </a>
-                <p class="newLine">thefallingboy.wordpress.com</p>
-              </div>
-              <div class="col-md-4">
-                <a href="https://www.linkedin.com/in/gamo920411/">
-                  <img src="./images/linkedin.svg" alt="linkedin" class="pagina">
-                </a>
-                <p class="newLine">linkedin.com/in/game920411</p>
-              </div>
-              <div class="col-md-4">
-                <a href="https://twitter.com/M_Antiheroe">
-                  <img src="./images/twitter.svg" alt="twitter" class="pagina">
-                </a>
-                <p class="newLine">twitter.com/M_Antiheroe</p>
-              </div>
-            </div>
-          </div>
+  <div class="row">
+    <footer class="col-md-12">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="https://thefallingboy.wordpress.com">
+            <img src="./images/globe.svg" alt="www" class="pagina">
+          </a>
+          <p class="newLine">thefallingboy.wordpress.com</p>
         </div>
-        <div class="row">
-          <div class="col-md-12 nopadding">
-            <div class="final">
-              <p>¿En que momento se complico tanto el mundo? Cuando Dios puso gente en el</p>
-            </div>
-          </div>
+        <div class="col-md-4">
+          <a href="https://www.linkedin.com/in/gamo920411/">
+            <img src="./images/linkedin.svg" alt="linkedin" class="pagina">
+          </a>
+          <p class="newLine">linkedin.com/in/game920411</p>
+        </div>
+        <div class="col-md-4">
+          <a href="https://twitter.com/M_Antiheroe">
+            <img src="./images/twitter.svg" alt="twitter" class="pagina">
+          </a>
+          <p class="newLine">twitter.com/M_Antiheroe</p>
         </div>
       </div>
+    </footer>
+  </div>
+
+  <div class="row">
+    <div class="final col-md-12">
+      <p>¿En que momento se complico tanto el mundo? Cuando Dios puso gente en el</p>
     </div>
-  </footer>
+  </div>
 </body>
 </html>
