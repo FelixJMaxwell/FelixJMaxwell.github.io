@@ -53,8 +53,18 @@ body{
     }
   }
 
-  .leftBoxContainer{
+  .leftBoxContainer1{
     box-shadow: 8px 0px 0px 0px rgba(0,0,0,0.7);
+
+    .info{
+      font-weight: bold;
+      span{
+        font-weight: lighter;
+      }
+    }
+  }
+
+  .leftBoxContainer2{
 
     .info{
       font-weight: bold;
@@ -94,13 +104,10 @@ body{
     margin-left: 35px;
   }
 
-  .newLine{
-    white-space: nowrap;
-    font-size: 12px;
-  }
-
   .mrTop{
-    margin-top: -22.5px;
+    margin-top: -14px;
+    //white-space: nowrap;
+    font-size: 12px;
   }
 
   footer{
