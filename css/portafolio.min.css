@@ -38,10 +38,21 @@ body header .mainMenu li {
 }
 
 body .wrapper {
-  margin: 120px 0;
+  margin: 15px 0 15px 0;
 }
 
 body .wrapper .informacionJuego {
   text-align: justify;
 }
-/*# sourceMappingURL=perfil2.min.css.map */
+
+body .wrapper .gameImagen {
+  width: 150px;
+  height: 150px;
+}
+
+body .wrapper .storeName {
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+/*# sourceMappingURL=portafolio.min.css.map */

@@ -36,10 +36,21 @@ body{
   }
 
   .wrapper{
-    margin: 120px 0;
+    margin: 15px 0 15px 0;
 
     .informacionJuego{
       text-align: justify;
+    }
+
+    .gameImagen{
+      width: 150px;
+      height: 150px;
+    }
+
+    .storeName{
+      width: 100%;
+      margin-top: 15px;
+      text-align: center;
     }
   }
 }
