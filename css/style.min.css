@@ -49,10 +49,6 @@ body .nameProfession {
   text-align: center;
 }
 
-body .nameProfession .titles {
-  margin-top: 200px;
-}
-
 body .nameProfession .photo img {
   border-radius: 50%;
   margin: 0 auto;
