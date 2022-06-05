@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  h2{
+    color: #417493;
+  }
+  
+  body{
+    background-color: #0aa1da;
+    .headerContainer{
+      background-color: #0088ce;
+    }
+    header{
+      background-color: #0088ce;
+      .mainMenu{
+        margin: 0;
+        padding: 0;
+        color: #f4fcff;
+      }
+      a{
+        text-decoration: none;
+        color: #f4fcff;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+      .mainMenu li{
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+      }
+    }
+  
+    .nameProfession{
+      padding: 35px;
+      color: #f4fcff;
+      text-align: center;
+  
+      .photo{
+        img{
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+  
+    .leftBoxContainer1{
+      box-shadow: 8px 0px 0px 0px rgba(0,0,0,0.7);
+  
+      .info{
+        font-weight: bold;
+        span{
+          font-weight: lighter;
+        }
+      }
+    }
+  
+    .leftBoxContainer2{
+  
+      .info{
+        font-weight: bold;
+        span{
+          font-weight: lighter;
+        }
+      }
+    }
+  
+    .information{
+      margin-top: 35px;
+    }
+  
+    .np{
+      box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.7);
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+  
+    .np2{
+      padding: 0;
+      box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.7);
+      margin-bottom: 0;
+      background-color: #576268;
+      .description{
+        margin-top: 15px;
+        color: #f4fcff;
+      }
+    }
+  
+    .wrapper{
+      margin-top: 8px;
+      background-color: #f7f7f7;
+    }
+  
+    footer{
+      color: #f4fcff;
+      text-align: center;;
+  
+      .pagina{
+        display: block;
+        margin: 25px auto;
+        width: 100px;
+      }
+    }
+  
+    .final{
+      background-color: #0088ce;
+      p{
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+      }
+    }
+  }
+  
