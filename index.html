@@ -1,184 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Oliver García Montero</title>
+    <title>Oliver García Montero - CV</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Usaremos el archivo CSS minificado directamente -->
     <link rel="stylesheet" href="./css/style.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./js/functions.js"></script>
+    <!-- Google Fonts para modernizar la tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="50"  id="theresnoplacelikehome">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="theresnoplacelikehome">
 
-  <div class="row headerContainer">
-    <header class="offset-md-1 col-md-8">
-      <nav>
-        <ul class="mainMenu">
-          <a href="#theresnoplacelikehome">
-            <li>Hello</li>
-          </a>
-          <a href="./portafolio.html">
-            <li>Portfolio</li>
-          </a>
-          <!-- <a href="./pruebas.html">
-            <li>Pruebas</li>
-          </a> -->
-        </ul>
-      </nav>
-    </header>
+  <!-- Navbar outside the A4 page -->
+  <div class="header-nav d-print-none">
+    <nav>
+      <ul class="mainMenu">
+        <a href="#theresnoplacelikehome"><li>Perfil</li></a>
+        <a href="./portafolio.html"><li>Portafolio</li></a>
+      </ul>
+    </nav>
   </div>
 
-  <div class="row nameProfession">
-    <div class="titles col-md-12">
+  <!-- A4 Page Container -->
+  <div class="a4-page">
+    
+    <!-- Encabezado del CV -->
+    <header class="cv-header text-center">
       <h1>Oliver García Montero</h1>
-      <h4>Ing. en Sistemas Computacionales</h4>
+      <h4>Ingeniero en Sistemas Computacionales | Community Manager</h4>
+    </header>
+
+    <div class="cv-body row">
+      
+      <!-- Columna Izquierda: Perfil, Info y Habilidades -->
+      <aside class="col-md-5 cv-sidebar">
+        
+        <section class="cv-section">
+          <h2>Perfil Profesional</h2>
+          <p class="description text-justify">
+            Ingeniero en Sistemas Computacionales con experiencia multidisciplinaria. Actualmente me desempeño como Community Manager, fusionando mis conocimientos técnicos con el manejo estratégico de redes sociales y la programación de publicaciones. 
+            Cuento con un fuerte perfil autodidacta, experiencia en administración de bases de datos, mantenimiento de infraestructura y desarrollo de software. Apasionado por optimizar procesos e integrar el desarrollo asistido por Inteligencia Artificial en mis herramientas de trabajo.
+          </p>
+        </section>
+
+        <section class="cv-section">
+          <h2>Información Personal</h2>
+          <ul class="info-list">
+            <li><strong>Cumpleaños:</strong> 11 Abril 1992</li>
+            <li><strong>Nacionalidad:</strong> Mexicano</li>
+            <li><strong>Idiomas:</strong> Español (Nativo), Inglés (Intermedio)</li>
+            <li><strong>Correo:</strong> inggamontero@gmail.com</li>
+          </ul>
+        </section>
+
+        <section class="cv-section">
+          <h2>Habilidades Técnicas</h2>
+          
+          <div class="skill-group">
+            <h5>Gestión y Diseño</h5>
+            <p>Community Management, Meta Business Suite, Adobe Illustrator, Adobe Photoshop, Edición de video, Fotografía.</p>
+          </div>
+
+          <div class="skill-group">
+            <h5>Sistemas e Infraestructura</h5>
+            <p>Servidores RedHat, PostgreSQL, Antenas Ubiquiti, Cámaras Dahua, Configuración de NVR's Samsung, Mantenimiento.</p>
+          </div>
+
+          <div class="skill-group">
+            <h5>Desarrollo e Innovación</h5>
+            <p>Uso avanzado de IA (Claude, Gemini) para documentación y refactorización, Desarrollo de videojuegos (Unity 3D), Automatización.</p>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Columna Derecha: Experiencia y Educación -->
+      <main class="col-md-7 cv-main">
+        
+        <section class="cv-section">
+          <h2>Experiencia Laboral</h2>
+          
+          <div class="job">
+            <div class="job-header">
+              <h5>Community Manager</h5>
+              <span class="date">2023 - Presente</span>
+            </div>
+            <p class="company">OPD Acabús</p>
+            <ul>
+              <li>Manejo de redes sociales usando Meta Business Suite y programación estratégica.</li>
+              <li>Rediseño de ilustraciones fotográficas, edición de video y cobertura fotográfica.</li>
+              <li>Gestión de la comunicación digital y atención a la comunidad.</li>
+              <li><strong>Logro destacado:</strong> Integración oficial de los mapas y rutas del sistema Acabús en la plataforma de Google Maps.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <h5>Administrador de BD y Técnico de Campo</h5>
+              <span class="date">2018 - 2023</span>
+            </div>
+            <p class="company">Mitalek II / Zednel / TSV / Code Consultoría</p>
+            <ul>
+              <li>Consultas de datos, generación de reportes en PDF y optimización de consultas en PostgreSQL.</li>
+              <li>Creación de copias de seguridad y actualización de sistemas de cobro propietarios.</li>
+              <li>Implementación y soporte en servidores RedHat.</li>
+              <li>Instalación de cámaras Dahua, NVR's Samsung y enlaces inalámbricos con antenas Ubiquiti.</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section class="cv-section">
+          <h2>Educación</h2>
+          
+          <div class="education">
+            <div class="job-header">
+              <h5>Ingeniería en Sistemas Computacionales</h5>
+              <span class="date">2010 - 2016</span>
+            </div>
+            <p class="company">Instituto Tecnológico de Acapulco</p>
+          </div>
+        </section>
+
+      </main>
     </div>
   </div>
 
-  <div class="row np"></div>
-
-  <div class="row np2">
-    <div class="offset-md-1 col-md-10">
-      <p class="description" id="descripcion">
-          Soy un Ingeniero en Sistemas Computacionales,
-          titulado en el Instituto Tecnológico de Acapulco,
-          soy autodidacta debido a mi gusto por la programacion,
-          me gusta decir que se Ingles a un nivel intermedio, puedo mantener una conversación con cierto margen de error,
-          posiblemente necesite que me repitan las cosas para entenderlas mejor, también puedo traducir textos por lo que no es problema
-          consultar documentos escritos en dicho Idioma.
-          Actualmente me dedico al desarrollo de videojuegos de forma independiente,
-          sin embargo también busco trabajo de forma activa como maquetador web (Front-End) o Programador de Aplicaciones Android con Java y Android Studio.  
-      </p>
+  <!-- Pie de página (se oculta al imprimir) -->
+  <footer class="d-print-none text-center mt-4 mb-5">
+    <div class="social-links mb-3">
+      <a href="https://www.linkedin.com/in/gamo920411/" class="mx-2" title="LinkedIn"><img src="./images/linkedin.svg" alt="LinkedIn" width="30"></a>
     </div>
-  </div>
-
-  <div class="row wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="leftBoxContainer1 col-md-4 d-none d-md-block">
-          <div class="information">
-            <h2>Información personal</h2>
-            <p class="info">Nombre <span>Oliver Garcia Montero</span></p>
-            <p class="info">Cumpleaños <span>11 Abril 1992</span></p>
-            <p class="info">Estado Civil <span>Soltero</span></p>
-            <p class="info">Nacionalidad <span>Mexicano</span></p>
-            <p class="info">Idiomas <span>Español, Ingles</span></p>
-            <p class="info">Correo <span>inggamontero@gmail.com</span></p>
-            <h2>Software</h2>
-            <p><span>Adobe Photoshop</span> -
-              <span>Microsoft Office</span> -
-              <span>Google Chrome</span> -
-              <span> Unity 3D</span> -
-              <span>Blender</span> -
-            </p>
-            <h2>Programación</h2>
-            <p>
-              <span>C++</span> -
-              <span>Java</span> -
-              <span>Python</span> -
-              <span>HTML</span> -
-              <span>CSS/SCSS</span> -
-              <span>Javascript</span> -
-              <span>jQuery</span> -
-              <span>C#</span>
-            </p>
-          </div>
-        </div>
-        <div class="leftBoxContainer2 col-md-4 d-sm-block d-md-none">
-          <div class="information">
-            <h2>Información personal</h2>
-            <p class="info">Nombre <span>Oliver Garcia Montero</span></p>
-            <p class="info">Cumpleaños <span>11 Abril 1992</span></p>
-            <p class="info">Estado Civil <span>Soltero</span></p>
-            <p class="info">Nacionalidad <span>Mexicano</span></p>
-            <p class="info">Idiomas <span>Español, Ingles</span></p>
-            <p class="info">Correo <span>inggamontero@gmail.com</span></p>
-            <h2>Software</h2>
-            <p><span>Adobe Photoshop</span> -
-              <span>Microsoft Office</span> -
-              <span>Google Chrome</span> -
-              <span> Unity 3D</span> -
-              <span>Blender</span> -
-            </p>
-            <h2>Programación</h2>
-            <p>
-              <span>C++</span> -
-              <span>Java</span> -
-              <span>Python</span> -
-              <span>HTML</span> -
-              <span>CSS/SCSS</span> -
-              <span>Javascript</span> -
-              <span>jQuery</span> -
-              <span>C#</span>
-            </p>
-          </div>
-        </div>
-        <div class="rightBoxContainer col-md-6 d-sm-block d-md-none">
-          <div class="information ">
-            <h2>Trabajo</h2>
-            <h5>Webmaster en el Instituto Tecnológico de Acapulco <span>2016</span></h5>
-            <p class="mrTop">Encargado de la pagina web y una parte de la información que se publicaba en ella.</p>
-            <h2>Habilidades</h2>
-            <h5>Desarrollo web Front-End</h5>
-            <p class="mrTop">HTML, CSS con preprocesador SASS(SCSS) y Bootstrap, JavaScript con el framework jQuery</p>
-            <h5>Desarrollo de videojuegos utilizando el motor Unity 3D</h5>
-            <p class="mrTop">Programación en C# y utilizando Blender como programa 3D</p>
-            <h5>Manejo avanzado de Windows</h5>
-            <h5>Capacidades tecnicas sobre equipos de computo</h5>
-            <h2>Educación</h2>
-            <p>Instituto Tecnológico de Acapulco <span>2010 - 2016</span></p>
-            <p class="mrTop"><span class="newLine">Ingenieria en Sistemas Computacionales [84.4]</span></p>
-          </div>
-        </div>
-        <div class="rightBoxContainer col-md-6 d-none d-md-block">
-          <div class="information rightInformation">
-            <h2>Trabajo</h2>
-            <h5>Webmaster en el Instituto Tecnológico de Acapulco <span>2016</span></h5>
-            <p class="mrTop">Encargado de la pagina web y una parte de la información que se publicaba en ella.</p>
-            <h2>Habilidades</h2>
-            <h5>Desarrollo web Front-End</h5>
-            <p class="mrTop">HTML, CSS con preprocesador SASS(SCSS) y Bootstrap, JavaScript con el framework jQuery</p>
-            <h5>Desarrollo de videojuegos utilizando el motor Unity 3D</h5>
-            <p class="mrTop">Programación en C# y utilizando Blender como programa 3D</p>
-            <h5>Manejo avanzado de Windows</h5>
-            <h5>Capacidades tecnicas sobre equipos de computo</h5>
-            <h2>Educación</h2>
-            <p>Instituto Tecnológico de Acapulco <span>2010 - 2016</span></p>
-            <p class="mrTop"><span class="newLine">Ingenieria en Sistemas Computacionales [84.4]</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <footer class="col-md-12">
-      <div class="row">
-        <div class="col-md-4">
-          <a href="https://thefallingboy.wordpress.com">
-            <img src="./images/globe.svg" alt="www" class="pagina">
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://www.linkedin.com/in/gamo920411/">
-            <img src="./images/linkedin.svg" alt="linkedin" class="pagina">
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://thefallingboy.com">
-            <img src="./images/globe.svg" alt="estapagina" class="pagina">
-          </a>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <div class="row">
-    <div class="final col-md-12">
+    <div class="quote text-muted" style="font-size: 0.85rem; font-style: italic;">
       <p>¿En que momento se complico tanto el mundo? Cuando Dios puso gente en él - Altered Carbon T1 E4</p>
     </div>
-  </div>
+  </footer>
+
 </body>
 </html>

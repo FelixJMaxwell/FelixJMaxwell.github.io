@@ -1,136 +1,227 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+:root {
+  --primary-color: #1a365d;
+  --secondary-color: #2b6cb0;
+  --accent-color: #4299e1;
+  --text-color: #2d3748;
+  --light-bg: #e2e8f0;
+  --paper-white: #ffffff;
 }
 
-h2 {
-  color: #417493;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #0aa1da;
-}
-
-body .headerContainer {
-  background-color: #0088ce;
-}
-
-body header {
-  background-color: #0088ce;
-}
-
-body header .mainMenu {
+  background-color: var(--light-bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
   margin: 0;
   padding: 0;
-  color: #f4fcff;
 }
 
-body header a {
+/* Navbar para modo web (fuera del CV impreso) */
+.header-nav {
+  background-color: var(--primary-color);
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mainMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainMenu a {
+  color: white;
   text-decoration: none;
-  color: #f4fcff;
-}
-
-body header a:hover {
-  text-decoration: none;
-}
-
-body header .mainMenu li {
   display: inline-block;
-  width: 100px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
+  padding: 8px 25px;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
-body .nameProfession {
-  padding: 35px;
-  color: #f4fcff;
-  text-align: center;
+.mainMenu a:hover {
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 4px;
 }
 
-body .nameProfession .photo img {
-  border-radius: 50%;
-  margin: 0 auto;
+/* Contenedor Hoja A4 */
+.a4-page {
+  background-color: var(--paper-white);
+  width: 210mm; /* Ancho estándar A4 */
+  min-height: 297mm; /* Alto estándar A4 */
+  margin: 40px auto;
+  padding: 20mm; /* Márgenes internos típicos de Word */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 2px;
 }
 
-body .leftBoxContainer1 {
-  -webkit-box-shadow: 8px 0px 0px 0px rgba(0, 0, 0, 0.7);
-          box-shadow: 8px 0px 0px 0px rgba(0, 0, 0, 0.7);
+/* Tipografía y Espaciado del CV */
+.cv-header {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-body .leftBoxContainer1 .info {
-  font-weight: bold;
+.cv-header h1 {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-size: 2.5rem;
 }
 
-body .leftBoxContainer1 .info span {
-  font-weight: lighter;
+.cv-header h4 {
+  font-weight: 400;
+  color: var(--secondary-color);
+  font-size: 1.15rem;
 }
 
-body .leftBoxContainer2 .info {
-  font-weight: bold;
+.cv-section {
+  margin-bottom: 30px;
 }
 
-body .leftBoxContainer2 .info span {
-  font-weight: lighter;
+.cv-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-body .information {
-  margin-top: 35px;
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
 }
 
-body .np {
-  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.7);
-          box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.7);
-  padding: 8px;
+.info-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+}
+
+.info-list strong {
+  color: var(--text-color);
+}
+
+.skill-group {
+  margin-bottom: 18px;
+}
+
+.skill-group h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 6px;
+}
+
+.skill-group p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4a5568;
+  margin: 0;
+}
+
+.job {
+  margin-bottom: 22px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.job-header h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.job-header .date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.job .company {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #718096;
   margin-bottom: 8px;
 }
 
-body .np2 {
-  padding: 0;
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.7);
-          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.7);
+.job ul {
+  padding-left: 18px;
+  font-size: 0.95rem;
+  color: #4a5568;
   margin-bottom: 0;
-  background-color: #576268;
 }
 
-body .np2 .description {
-  margin-top: 15px;
-  color: #f4fcff;
+.job ul li {
+  margin-bottom: 6px;
 }
 
-body .wrapper {
-  margin-top: 8px;
-  background-color: #f7f7f7;
+.education {
+  margin-bottom: 20px;
 }
 
-body .rightInformation {
-  margin-left: 35px;
+.social-links a img {
+  /* Filtro para hacer los iconos oscuros y encajar con el tema moderno */
+  filter: brightness(0) saturate(100%) invert(20%) sepia(21%) saturate(2224%) hue-rotate(185deg) brightness(94%) contrast(92%);
+  transition: transform 0.2s;
 }
 
-body .mrTop {
-  margin-top: -14px;
-  font-size: 12px;
+.social-links a:hover img {
+  transform: scale(1.1);
 }
 
-body footer {
-  color: #f4fcff;
-  text-align: center;
+/* Responsividad para móviles y pantallas pequeñas */
+@media (max-width: 900px) {
+  .a4-page {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10mm;
+    min-height: auto;
+  }
+  .job-header {
+    flex-direction: column;
+  }
+  .job-header .date {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
 }
 
-body footer .pagina {
-  display: block;
-  margin: 25px auto;
-  width: 100px;
+/* Estilos de Impresión */
+@media print {
+  body {
+    background-color: var(--paper-white);
+  }
+  .a4-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .d-print-none {
+    display: none !important;
+  }
+  .cv-section {
+    break-inside: avoid;
+  }
 }
-
-body .final {
-  background-color: #0088ce;
-}
-
-body .final p {
-  margin: 0;
-  padding: 5px;
-  text-align: center;
-}
-/*# sourceMappingURL=style.min.css.map */
